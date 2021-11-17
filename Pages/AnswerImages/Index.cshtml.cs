@@ -19,12 +19,12 @@ namespace Lab5.NET.Pages.AnswerImages
         }
 
         //public IList<AnswerImage> AnswerImages { get; set; }
-        public IList<AnswerImage> Answers { get; set; }
+        public IList<AnswerImage> AnswerImages { get; set; }
 
         public async Task OnGetAsync()
         {
-            Answers = await _context.Answers.ToListAsync();
-            //Answers
+            AnswerImages = await _context.Answers.ToListAsync();
+       
         }
     }
 }

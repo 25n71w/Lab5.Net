@@ -23,8 +23,8 @@ namespace Lab5.NET
             var connection = Configuration.GetConnectionString("LocalDBConnection");
             services.AddDbContext<AnswerImageDataContext>(options => options.UseSqlServer(connection));
 
-           /* var blobConnection = Configuration.GetConnectionString("AzureBlobStorage");
-            services.AddSingleton(new BlobServiceClient(blobConnection));*/
+            var blobConnection = Configuration.GetConnectionString("AzureBlobStorage");
+            services.AddSingleton(new BlobServiceClient(blobConnection));
 
             services.AddRazorPages();
 

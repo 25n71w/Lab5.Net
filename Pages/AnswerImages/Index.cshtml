@@ -13,16 +13,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Answers[0].FileName)
+                @Html.DisplayNameFor(model => model.AnswerImages[0].FileName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Answers[0].Url)
+                @Html.DisplayNameFor(model => model.AnswerImages[0].Url)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model.Answers)
+        @foreach (var item in Model.AnswerImages)
         {
             <tr>
                 <td>
